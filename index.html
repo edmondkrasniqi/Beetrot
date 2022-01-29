@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dokument</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-free-5.15.4-web/css/all.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300&family=Josefin+Sans:wght@100;200;300;400&family=Montserrat:wght@300&display=swap"
+  rel="stylesheet">
+</head>
+
+<body>
+ 
+  <section class="navigation" id="myNavbar">
+    <div class="logo">
+      <a href=""><img class="logo" src="assets/images/logo.svg" alt=""></a>
+      <i class="fas fa-bars toggle" onClick="toggleMenuResponsive()"></i>
+    </div>
+    <nav class="nav">
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="">WHO ARE WE</a></li>
+        <li class="menu__item"><a class="menu__link" href="">WHAT WE DO</a></li>
+        <li class="menu__item"><a class="menu__link" href="">TRAWEL WITH US</a></li>
+        <li class="menu__item"><a class="menu__link" href="">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </section>
+  <main class="main">
+    <section class="main__item main__item--hero ">
+      <div class="hero">
+        <h1 class="hero__title h1">BHROMAON</h1>
+        <h3 class="hero__description h3">Safe Travel Anywhere</h3>
+        <form action="" class="hero__form">
+          <input type="text" class="text" placeholder="Search Your Travel Destination">
+          <button class="button hero--button">Search<i class="fas fa-search"></i></button>
+        </form>
+        <p class="p p--white">Scroll Down</p>
+      </div>
+    </section>
+
+    <section class="main__item main__item--explore">
+      <div class="explore container">
+        <div class="explore__item explore__description">
+          <h2 class="explore__title h2">Why Choose Us</h2>
+          <p class="explore__paragraph p">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee </p>
+          <p class="explore__paragraph p">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
+          <button class="button explore__button">Explore Places </button>
+        </div>
+        <div class="explore__item explore__images">
+          <img class="explore__img--top" src="assets/images/explore__img-top.png" alt="">
+          <img class="explore__img--bot" src="assets/images/explore__img-bot.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="main__item main__item--card">
+      <div class="card container">
+        <div class="card__content">
+          <h4 class="card__description h4 h4--josefin">Spain</h4>
+          <h3 class="card__title h3">Grand Spain Madrid</h3>
+          <p class="card__paragraph p">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+          <button class="button card__button">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__item main__item--card main__item--card__second">
+      <div class="card card--right container">
+        <div class="card__content card__content--second">
+          <h4 class="card__description h4 h4--josefin">Spain</h4>
+          <h3 class="card__title h3">Grand Spain Madrid</h3>
+          <p class="card__paragraph p">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+          <button class="button card__button">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__item main__item--passes">
+        <div class="passes__title">
+          <h2 class="h2">What Our  Tourist Say</h2>
+        </div>
+        <div class="passes__content">
+          <div class="passes__image">
+            <img class="passes__img" src="assets/images/passes-image.png" alt="">
+          </div>
+          <div class="passes__description">
+            <h4 class="h4 h4--josefin">Sam Sumon</h4>
+            <p class="p"><i class="fas fa-quote-left"></i> But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="main__item main__item--footer">
+      <footer class="footer">
+        <h3 class="footer__title h3">BHROMAON</h3>
+        <p class="footer__description p">Safe Travel Anywhere</p>
+        <ul class="footer__menu">
+          <li class="footer__item"><a class="footer__link" href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li class="footer__item"><a class="footer__link" href=""><i class="fab fa-twitter"></i></a></li>
+          <li class="footer__item"><a class="footer__link" href=""><i class="fab fa-linkedin-in"></i></a></li>
+          <li class="footer__item"><a class="footer__link" href=""><i class="fab fa-youtube"></i></a></li>
+          <li class="footer__item"><a class="footer__link" href=""><i class="fab fa-pinterest"></i></a></li>
+        </ul>
+      </footer>
+    </section>
+  </main>
+
+</body>
+
+</html>
+<script>
+  function toggleMenuResponsive() {
+    var navbar = document.getElementById('myNavbar');
+    if (navbar.className === 'navigation') {
+      navbar.className += ' responsive';
+    } else {
+      navbar.className = 'navigation';
+    }
+  }
+</script>
